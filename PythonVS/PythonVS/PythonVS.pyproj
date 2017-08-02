@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>7c5426bc-39ee-4ac5-8566-f2342adf6e27</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PythonVS.py</StartupFile>
+    <StartupFile>drawscatter.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,11 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="drawscatter.py" />
     <Compile Include="PythonVS.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="resultsPic\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
