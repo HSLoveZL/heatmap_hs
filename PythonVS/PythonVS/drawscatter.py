@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 arr = []
-with open('D:\\UnityConsole\\test006.csv') as f:
+with open('D:\\UnityConsole\\2DCoordinate\\2017-08-13\\test.csv') as f:
 	f_csv = csv.reader(f)
 	for value in f_csv:
 		arr.append(value)
@@ -22,4 +22,5 @@ plt.xlim(xmin=np.min(x), xmax=np.max(x))
 plt.ylim(ymin=np.min(y), ymax=np.max(y))
 # plt.xlim(xmin=-3, xmax=3)
 # plt.ylim(ymin=0, ymax=5)
-plt.savefig(".\\resultsPic\\testsp006.png", dpi=160, transparent=True)
+plt.axis('off')
+plt.savefig(".\\resultsPic\\2017-08-26sc.png", dpi=160, transparent=True)
